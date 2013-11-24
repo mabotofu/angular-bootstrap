@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="bootstrap">
+    <head>
+
+        <title>angular-bootstrap</title>
+
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+        <% if(files.css) files.css.forEach( function ( file ) { %>
+            <link rel="stylesheet" type="text/css" href="<%= file %>" />
+        <% }); %>
+
+        <% if(files.js) files.js.forEach( function ( file ) { %>
+            <script type="text/javascript" src="<%= file %>"></script>
+        <% }); %>
+
+    </head>
+    <body>
+        <a href="#/">root</a>
+        <a href="#/bar">bar</a>
+        <a href="#/foo">foo</a>
+        <ng-view></ng-view>
+    </body>
+
+</html>

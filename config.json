@@ -1,0 +1,29 @@
+{
+    "build_dir": "build",
+    "prod_dir": "bin",
+    "img_dir": "img",
+    "src_dir": "src",
+    "js_final": "app.js",
+    "css_final": "app.css",
+    "main_less": "less/main.less",
+
+    "js": {
+        "dev": [
+            "**/angular.js",
+            "**/angular*.js",
+            "**/*.js"
+        ],
+        "prod": [
+            "app.js"
+        ]
+    },
+
+    "css": {
+        "dev": [
+            "app.css"
+        ],
+        "prod": [
+            "app.css"
+        ]
+    }
+}
