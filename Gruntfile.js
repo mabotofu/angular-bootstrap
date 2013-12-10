@@ -23,7 +23,7 @@ module.exports = function (grunt) {
             js: {
                 expand: true,
                 cwd: "<%= cfg.src_dir %>",
-                src: ["**/*.js"],
+                src: ["**/*.js", "!**/*.spec.js"],
                 dest: "<%= cfg.build_dir %>"
             },
 
@@ -143,10 +143,6 @@ module.exports = function (grunt) {
         },
 
         watch: {
-
-            options: {
-                nospawn: true
-            },
 
             js: {
                 files: [

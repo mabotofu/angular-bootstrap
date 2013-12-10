@@ -1,11 +1,11 @@
 "use strict";
-angular.module("bootstrap:foo", ["ngRoute", "testComponent"])
+angular.module("bootstrap.foo", ["ngRoute", "testComponent"])
     .config(function ($routeProvider) {
         $routeProvider.when("/foo", {
             templateUrl: "app/foo/foo.tpl.html",
-            controller: "fooCtr"
+            controller: "FooCtrl"
         });
     })
-    .controller("fooCtr", function($scope) {
+    .controller("FooCtrl", function($scope) {
         $scope.text = "This is foo";
     });

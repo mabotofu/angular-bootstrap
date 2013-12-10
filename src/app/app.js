@@ -2,8 +2,8 @@
 angular.module("bootstrap", [
         "templates-main",
         "ngRoute",
-        "bootstrap:foo",
-        "bootstrap:bar"
+        "bootstrap.foo",
+        "bootstrap.bar"
     ])
     .config(function ($routeProvider) {
         $routeProvider
